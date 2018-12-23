@@ -1,6 +1,6 @@
 spring:
   rabbitmq:
-    addresses: http://localhost:5672 #amqp://localhost:5672
+    addresses: amqp://localhost:5672 #amqp://localhost:5672
     username: admin
     password: amdin
   cloud:
