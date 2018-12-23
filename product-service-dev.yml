@@ -6,8 +6,10 @@ spring:
   cloud:
     stream:
       bindings:
-        PRODUCT_QUEUE_TEST:
-          group: product
+        PRODUCT_QUEUE_INPUT:
+          group: productInput
+         PRODUCT_QUEUE_OUTPUT:
+          group: productOutput
 
 server:
   port: 9010  
