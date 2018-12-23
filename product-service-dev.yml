@@ -6,7 +6,7 @@ spring:
   cloud:
     stream:
       bindings:
-        PRODUCT_QUEUE2:
+        PRODUCT_QUEUE_TEST:
           group: product
 
 server:
