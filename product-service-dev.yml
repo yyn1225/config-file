@@ -1,16 +1,15 @@
 spring:
   application:
     name: product-service
- cloud:
-   rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-   stream:
-    bindings:
-      PRODUCT_QUEUE2:
-        group: product
+  rabbitmq:
+    addresses: http://localhost:5672 #amqp://localhost:5672
+    username: admin
+    password: amdin
+  cloud:
+    stream:
+      bindings:
+        PRODUCT_QUEUE2:
+          group: product
 
 server:
   port: 9010  
