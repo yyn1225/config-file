@@ -8,7 +8,7 @@ spring:
       bindings:
         PRODUCT_QUEUE_INPUT:
           group: productInput
-         PRODUCT_QUEUE_OUTPUT:
+        PRODUCT_QUEUE_OUTPUT:
           group: productOutput
 
 server:
