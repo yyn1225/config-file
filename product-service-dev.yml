@@ -7,6 +7,10 @@ spring:
     port: 5672
     username: guest
     password: guest
+   stream:
+    bindings:
+      PRODUCT_QUEUE2:
+        group: product
 
 server:
   port: 9010  
