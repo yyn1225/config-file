@@ -2,7 +2,7 @@ spring:
   rabbitmq:
     addresses: amqp://localhost:5672 #amqp://localhost:5672
     username: admin
-    password: amdin
+    password: admin
   cloud:
     stream:
       bindings:
