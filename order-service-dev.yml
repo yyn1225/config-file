@@ -1,0 +1,20 @@
+spring:
+  rabbitmq:
+    addresses: amqp://localhost:5672 #amqp://localhost:5672
+    username: admin
+    password: admin
+  cloud:
+    stream:
+      bindings:
+        PRODUCT_QUEUE_INPUT:
+          group: productInput
+        PRODUCT_QUEUE_OUTPUT:
+          group: productOutput
+
+server:
+  port: 9020  
+      
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
